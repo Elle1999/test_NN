@@ -1,10 +1,8 @@
 import numpy as np
-
 class Perceptron():
-  #creates the 
   
   def __init__(self, input_shape):
-    self.weights = np.random.randint() * np.random.random((input_shape , 1))
+    self.weights = np.random.randint(1,10) * np.random.random((input_shape , 1))
 
   def sigmoid(x):
     return 1 / (1 + np.exp(-x))
@@ -34,3 +32,13 @@ class Perceptron():
           print("Actual: ", actual)
         
         self.backward(x, y)
+
+        X_train = np.array([[0,0,1],
+                   [1,1,1],
+                   [1,0,1],
+                   [0,1,1]])
+
+y_train = [[0],
+           [1],
+           [1],
+           [0]]
