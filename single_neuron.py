@@ -1,4 +1,7 @@
+import numpy as np
+
 class Perceptron():
+  #creates the 
   
   def __init__(self, input_shape):
     self.weights = np.random.randint() * np.random.random((input_shape , 1))
